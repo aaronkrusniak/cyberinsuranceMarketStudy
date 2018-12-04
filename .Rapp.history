@@ -1,0 +1,4 @@
+tr2 <- read.csv("~/Breaches_Year_Sorted1.csv", header = T, stringsAsFactors=FALSE)#
+plot(tr2)
+tr2 <- read.csv("~/Breaches_Year_Sorted1.csv", header = T, stringsAsFactors=FALSE)
+plot(tr2, main = "Size per Databreaches", xlab="Size", ylab="Year")
