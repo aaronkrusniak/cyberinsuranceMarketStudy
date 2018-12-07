@@ -1,0 +1,11 @@
+br <- read.csv(file = "C:\\Users\\Josh\\Desktop\\HospitalsThatHadBreaches09-18.csv" , sep = ",")
+##You'll need to edit the file path for use on your own devices.
+
+hsbr <- table(br$Year.of.Breach)
+##This creates a table of the number of hospitals breached in a given year.
+
+plot(hsbr ,main = "Hospital Breaches Per Year", ylab = "Breaches", xlab = "Year")
+## This creates a plot of the above tabe.
+
+plot(hsbr/4794 ,main = "Percent of Hospitals Breached", ylab = "Percent Breached", xlab = "Year")
+##This creates a plot of the percentage of hospitals breached in a given year.
