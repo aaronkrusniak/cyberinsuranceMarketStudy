@@ -8,7 +8,7 @@ breachplot <- table(breachtable)
 plot(breachplot, type = "l", main = "Number of Breaches per Year in the US", xlab = "Year", ylab = "Number of Breaches")
 
 
-db2 <- read.csv("~/Newtable.csv", header = T)
+db2 <- read.csv("~/Sorted_Insurancy_Prices.csv", header = T)
 db2$X <- NULL
 
 class(db2$sortcp.Submission.Date)
